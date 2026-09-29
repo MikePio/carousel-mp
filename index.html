@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080908" />
+    <title>I nostri ricordi</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="carousel" id="carousel" aria-roledescription="carosello" aria-label="I nostri ricordi">
+      <div class="carousel__slides">
+        <figure class="slide is-active" aria-hidden="false">
+          <img
+            src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2200&q=85"
+            alt="Lago tra le montagne al tramonto"
+            fetchpriority="high"
+          />
+        </figure>
+        <figure class="slide" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=2200&q=85"
+            alt="Dune del deserto illuminate dal sole"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="slide" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=85"
+            alt="Costa affacciata sull'oceano"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="slide" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2200&q=85"
+            alt="Sentiero in una foresta verde"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="slide" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=2200&q=85"
+            alt="Città illuminata di notte"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+
+      <button class="arrow arrow--previous" type="button" aria-label="Foto precedente">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 12H5m0 0 7 7m-7-7 7-7" />
+        </svg>
+      </button>
+      <button class="arrow arrow--next" type="button" aria-label="Foto successiva">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12h14m0 0-7-7m7 7-7 7" />
+        </svg>
+      </button>
+
+      <div class="dots" role="group" aria-label="Seleziona una foto">
+        <button class="dot is-active" type="button" aria-label="Foto 1" aria-current="true"></button>
+        <button class="dot" type="button" aria-label="Foto 2"></button>
+        <button class="dot" type="button" aria-label="Foto 3"></button>
+        <button class="dot" type="button" aria-label="Foto 4"></button>
+        <button class="dot" type="button" aria-label="Foto 5"></button>
+      </div>
+    </main>
+  </body>
+</html>
